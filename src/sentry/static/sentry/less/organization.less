@@ -633,13 +633,22 @@
   }
 }
 
+.collapsed {
+  .onboarding-progress-bar {
+    width: 16px;
+    height: 150px;
+    margin-left: 6px;
+  }
+  .slider {
+    width: 16px;
+    height: auto;
+  }
+}
+
 .onboarding-progress-bar {
   background: rgba(255, 255, 255, 0.15);
-  width: 16px;
-  height: 150px;
-  float: right;
-  margin-right: 20px;
-  margin-top: 16px;
+  height: 16px;
+  width: 100%;
   border-radius: 2px;
   position: relative;
   cursor: pointer;
@@ -653,7 +662,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 16px;
+    height: 16px;
   }
 
   .dropdown-menu {
@@ -694,10 +703,10 @@
     display: block;
     content: '';
     position: absolute;
-    top: -10px;
-    bottom: -10px;
-    left: -10px;
-    right: -10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 

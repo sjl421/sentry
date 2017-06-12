@@ -132,11 +132,11 @@ class OrganizationDetailsBody extends Component {
         return <DeletionInProgress organization={organization} />;
       }
     return (
-      <div>
-        <Sidebar />
+      <React.Fragment>
+        <Sidebar organization={organization} />
         {this.props.children}
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }
